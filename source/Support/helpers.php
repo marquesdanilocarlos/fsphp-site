@@ -88,13 +88,22 @@ function csrfVerify(array $request): bool
  * @param string $path
  * @return string
  */
-function url(string $path): string
+function url(string $path = null): string
 {
-    $base = CONF_URL_BASE;
+    if (strpos($_SERVER["HTTP_HOST"], "localhost")) {
+        if ($path) {
+            return CONF_URL_TEST . "/" . ($path[0] == "/") ? mb_substr($path, 1) : $path;
+        }
 
-    $path = ($path[0] == "/") ? mb_substr($path, 1) : $path;
+        return CONF_URL_TEST;
+    }
 
-    return "{$base}{$path}";
+    if ($path) {
+        return CONF_URL_BASE . "/" . ($path[0] == "/") ? mb_substr($path, 1) : $path;
+    }
+
+    return CONF_URL_BASE;
+
 }
 
 /**

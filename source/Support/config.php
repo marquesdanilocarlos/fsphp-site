@@ -12,7 +12,8 @@ define("CONF_DB_NAME", "php");
 /**
  * URLS
  */
-define("CONF_URL_BASE", "http://www.localhost/fsphp-site");
+define("CONF_URL_TEST", "http://www.localhost/fsphp-site");
+define("CONF_URL_BASE", "http://www.cafecontrol.com.br");
 define("CONF_URL_ADMIN", "/admin");
 define("CONF_URL_ERROR", CONF_URL_BASE . "/404");
 
@@ -66,7 +67,8 @@ define("CONF_MAIL_OPTION_CHARSET", "utf-8");
  * VIEW
  */
 
-define("CONF_VIEW_PATH", __DIR__ . "/../../assets/views");
+define("CONF_VIEW_PATH", __DIR__ . "/../../shared/views");
+define("CONF_VIEW_THEME", __DIR__ . "cafecontrol");
 define("CONF_VIEW_EXT", "php");
 
 /**
