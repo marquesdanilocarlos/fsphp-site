@@ -68,7 +68,7 @@ define("CONF_MAIL_OPTION_CHARSET", "utf-8");
  */
 
 define("CONF_VIEW_PATH", __DIR__ . "/../../shared/views");
-define("CONF_VIEW_THEME", __DIR__ . "cafecontrol");
+define("CONF_VIEW_THEME", "cafecontrol");
 define("CONF_VIEW_EXT", "php");
 
 /**
@@ -104,4 +104,6 @@ define("CONF_SOCIAL_TWITTER_CREATOR", "@marquesdaniloc");
 define("CONF_SOCIAL_TWITTER_PUBLISHER", "@marquesdaniloc");
 define("CONF_SOCIAL_FACEBOOK_APP", "356464859317524");
 define("CONF_SOCIAL_FACEBOOK_PAGE", "danilo.carlosmarques");
+define("CONF_SOCIAL_INSTA_PAGE", "marquesdanilocarlos");
+define("CONF_SOCIAL_YOUTUBE_PAGE", "upinside");
 define("CONF_SOCIAL_FACEBOOK_AUTHOR", "danilo.carlosmarques");
